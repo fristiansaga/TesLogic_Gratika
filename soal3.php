@@ -2,10 +2,8 @@
 function hitungHuruf($input) {
     $counter = [];
 
-    // Mengubah input menjadi huruf kecil
     $input = strtolower($input);
-
-    // Menghitung banyaknya huruf
+ 
     foreach (str_split($input) as $letter) {
         if (!isset($counter[$letter])) {
             $counter[$letter] = 0;
